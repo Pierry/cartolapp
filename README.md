@@ -1,12 +1,13 @@
 Cartolapp
 ===========
 
-Módulos
+Módulos / Tempo estimado
 
-- Arquitetura básica
-- Heroscreen
-- Add equipe
-- Equipes adicionadas
+- Arquitetura básica - 1h
+- Heroscreen - 1h
+- Add equipe - 1h
+- Equipes adicionadas - 1h
+- Correções e testes- 1h
 
 Padrões
 
@@ -15,7 +16,3 @@ Padrões
 Libs
 
 - Android Annotations
-
-
-
-
