@@ -1,23 +1,23 @@
 Cartolapp
 ===========
 
-# Módulos / Tempo estimado
+### Módulos 
 
-- Arquitetura básica - 1h
-- Heroscreen - 1h
-- Add equipe - 1h
-- Equipes adicionadas - 1h
-- Correções e testes- 1h
+- Arquitetura básica
+- Heroscreen 
+- Add equipe
+- Equipes adicionadas
+- Correções e testes
 
-# Padrões
+### Padrões
 
 - Repository Pattern
 
-# Libs
+### Libs
 
 - Android Annotations
 
-# API
+### API
 - [Status do mercado](https://api.cartolafc.globo.com/mercado/status)
 - [Lista dos jogadores mais escalados](https://api.cartolafc.globo.com/mercado/destaques)
 - [Lista de patrocinadores](https://api.cartolafc.globo.com/patrocinadores)
@@ -32,8 +32,8 @@ Cartolapp
 - [Busca geral de ligas, para consultar uma liga específica é necessário token](https://api.cartolafc.globo.com/ligas?q=nomedaliga)
 - [Busca informações de uma liga específica, usar o slug da liga](https://api.cartolafc.globo.com/auth/liga/[slug da liga)
 
-# Mockup
+### Mockup
 
-# Paleta de Cores
+### Paleta de Cores
 
 http://www.materialpalette.com/blue/lime
