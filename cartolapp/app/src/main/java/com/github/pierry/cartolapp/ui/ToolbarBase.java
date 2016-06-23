@@ -77,8 +77,8 @@ import org.androidannotations.annotations.UiThread;
         .build();
   }
 
-  @UiThread void changeColor(PagerSlidingTabStrip tabs, SystemBarTintManager tintManager,
-      int newColor) {
+  @UiThread
+  public void changeColor(PagerSlidingTabStrip tabs, SystemBarTintManager tintManager, int newColor) {
     tabs.setBackgroundColor(newColor);
     tintManager.setTintColor(newColor);
   }

@@ -1,11 +1,20 @@
 package com.github.pierry.cartolapp.domain;
 
-public class Team {
+import com.activeandroid.Model;
+import com.activeandroid.annotation.Column;
+import com.activeandroid.annotation.Table;
+import com.google.gson.annotations.SerializedName;
 
-  private long teamId;
-  private String name;
-  private String owner;
-  private String image;
+@Table(name = "Team") public class Team extends Model {
+
+  @SerializedName(value = "time_id") @Column(name = "TeamId") long teamId;
+  @SerializedName(value = "nome") @Column(name = "Name") String name;
+  @SerializedName(value = "nome_cartola") @Column(name = "Owner") String owner;
+  @SerializedName(value = "url_escudo_png") @Column(name = "Image") String image;
+
+  public Team() {
+    super();
+  }
 
   public long getTeamId() {
     return teamId;

@@ -1,4 +1,6 @@
 package com.github.pierry.cartolapp.domain.contracts;
 
-public interface ITeamRepository {
+import com.github.pierry.cartolapp.domain.Team;
+
+public interface ITeamRepository extends ICrud<Team> {
 }

@@ -1,13 +1,30 @@
 package com.github.pierry.cartolapp.domain;
 
-public class Player {
+import com.activeandroid.Model;
+import com.activeandroid.annotation.Column;
+import com.activeandroid.annotation.Table;
 
-  private String name;
-  private String photo;
-  private double price;
-  private double var;
-  private double average;
-  private double matches;
+@Table(name = "Player") public class Player extends Model {
+
+  @Column(name = "PlayerId") String playerId;
+  @Column(name = "Name") String name;
+  @Column(name = "Photo") String photo;
+  @Column(name = "Price") double price;
+  @Column(name = "Var") double var;
+  @Column(name = "Average") double average;
+  @Column(name = "Matches") double matches;
+
+  public Player() {
+    super();
+  }
+
+  public String getPlayerId() {
+    return playerId;
+  }
+
+  public void setPlayerId(String playerId) {
+    this.playerId = playerId;
+  }
 
   public String getName() {
     return name;

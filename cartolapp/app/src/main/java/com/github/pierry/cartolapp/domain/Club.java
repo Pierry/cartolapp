@@ -1,11 +1,19 @@
 package com.github.pierry.cartolapp.domain;
 
-public class Club {
+import com.activeandroid.Model;
+import com.activeandroid.annotation.Column;
+import com.activeandroid.annotation.Table;
 
-  private int clubId;
-  private String name;
-  private String abbr;
-  private String image;
+@Table(name = "Club") public class Club extends Model {
+
+  @Column(name = "ClubId") int clubId;
+  @Column(name = "Name") String name;
+  @Column(name = "Abbr") String abbr;
+  @Column(name = "Image") String image;
+
+  public Club() {
+    super();
+  }
 
   public int getClubId() {
     return clubId;
