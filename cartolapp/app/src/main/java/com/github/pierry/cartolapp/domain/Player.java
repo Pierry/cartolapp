@@ -12,7 +12,9 @@ import com.activeandroid.annotation.Table;
   @Column(name = "Price") double price;
   @Column(name = "Var") double var;
   @Column(name = "Average") double average;
+  @Column(name = "Points") double points;
   @Column(name = "Matches") double matches;
+  @Column(name = "ClubId") long clubId;
 
   public Player() {
     super();
@@ -72,5 +74,21 @@ import com.activeandroid.annotation.Table;
 
   public void setMatches(double matches) {
     this.matches = matches;
+  }
+
+  public long getClubId() {
+    return clubId;
+  }
+
+  public void setClubId(long clubId) {
+    this.clubId = clubId;
+  }
+
+  public double getPoints() {
+    return points;
+  }
+
+  public void setPoints(double points) {
+    this.points = points;
   }
 }
