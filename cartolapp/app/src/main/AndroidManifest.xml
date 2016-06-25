@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.pierry.cartolapp">
+
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+  <application
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:name=".CartolaApp"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme">
+
+    <meta-data
+        android:name="AA_DB_NAME"
+        android:value="cartolapp1.db"
+    />
+    <meta-data
+        android:name="AA_DB_VERSION"
+        android:value="1"
+    />
+    <meta-data
+        android:name="AA_MODELS"
+        android:value="com.github.pierry.cartolapp.domain.Club,
+        com.github.pierry.cartolapp.domain.Player,
+        com.github.pierry.cartolapp.domain.Team"
+    />
+
+    <activity android:name=".MainActivity_">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+  </application>
+
+</manifest>

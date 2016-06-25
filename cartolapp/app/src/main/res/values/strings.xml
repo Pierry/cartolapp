@@ -1,0 +1,17 @@
+<resources>
+  <string name="app_name">Cartolapp</string>
+  <string name="home">Home</string>
+  <string name="refresh">Atualizar</string>
+  <string name="title_example">LambisqueirosFC</string>
+  <string name="owner_example">Pierry Borges</string>
+  <string name="points_example">120.2</string>
+  <string name="team_example">Equipe</string>
+  <string name="add">Adicionar</string>
+  <string name="add_team">Adicionar equipe</string>
+  <string name="cancel">Cancelar</string>
+  <string name="error_string">O nome é necessário</string>
+  <string name="club_example">Grêmio</string>
+  <string name="player_example">Marcelo Grohe da Silva dos Santos</string>
+  <string name="price_example">$ 23.04</string>
+  <string name="empty_list">Nenhum item existente</string>
+</resources>
