@@ -45,13 +45,15 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"/>
     </LinearLayout>
-    <TextView
-        android:id="@+id/points"
+    <Button
+        android:id="@+id/add"
         android:maxLines="1"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:textSize="@dimen/xxlarge_font"
-        android:textStyle="bold"
+        android:textSize="@dimen/tiny_font"
+        android:textColor="@color/icons"
+        android:background="@drawable/btn_animated_add"
+        android:text="@string/add_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

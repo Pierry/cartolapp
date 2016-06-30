@@ -3,18 +3,19 @@ package com.github.pierry.cartolapp.domain;
 import com.activeandroid.Model;
 import com.activeandroid.annotation.Column;
 import com.activeandroid.annotation.Table;
+import com.google.gson.annotations.SerializedName;
 
 @Table(name = "Player") public class Player extends Model {
 
-  @Column(name = "PlayerId") String playerId;
-  @Column(name = "Name") String name;
-  @Column(name = "Photo") String photo;
-  @Column(name = "Price") double price;
-  @Column(name = "Var") double var;
-  @Column(name = "Average") double average;
-  @Column(name = "Points") double points;
-  @Column(name = "Matches") double matches;
-  @Column(name = "ClubId") long clubId;
+  @SerializedName(value = "atleta_id") @Column(name = "PlayerId") String playerId;
+  @SerializedName(value = "nome") @Column(name = "Name") String name;
+  @SerializedName(value = "foto") @Column(name = "Photo") String photo;
+  @SerializedName(value = "preco_num") @Column(name = "Price") double price;
+  @SerializedName(value = "time_id") @Column(name = "Var") double var;
+  @SerializedName(value = "time_id") @Column(name = "Average") double average;
+  @SerializedName(value = "time_id") @Column(name = "Points") double points;
+  @SerializedName(value = "time_id") @Column(name = "Matches") double matches;
+  @SerializedName(value = "time_id") @Column(name = "ClubId") long clubId;
 
   public Player() {
     super();

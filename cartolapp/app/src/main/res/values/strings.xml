@@ -14,4 +14,6 @@
   <string name="player_example">Marcelo Grohe da Silva dos Santos</string>
   <string name="price_example">$ 23.04</string>
   <string name="empty_list">Nenhum item existente</string>
+  <string name="add_title">Add</string>
+  <string name="saved">Time salvo com sucesso</string>
 </resources>

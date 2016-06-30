@@ -1,0 +1,55 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutMain"
+    android:background="@color/icons"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+  <com.github.pierry.fitloader.RotateLoading
+      android:id="@+id/rotateLoading"
+      android:layout_width="@dimen/rotate_loading"
+      android:visibility="gone"
+      android:layout_height="@dimen/rotate_loading"
+      app:loading_width="@dimen/rotate_loading_width"
+      android:background="@android:color/transparent"
+      android:layout_centerInParent="true"
+  />
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/body"
+      android:orientation="horizontal"
+  >
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent">
+      <com.rengwuxian.materialedittext.MaterialEditText
+          android:layout_width="match_parent"
+          android:textColor="@color/colorPrimaryDark"
+          app:met_errorColor="@color/md_red_400"
+          android:padding="@dimen/small_margin"
+          android:textColorHint="@color/colorPrimaryLight"
+          android:id="@+id/teamRequest"
+          android:layout_margin="@dimen/default_margin"
+          android:layout_height="wrap_content"
+          app:met_floatingLabel="highlight"
+          app:met_textColor="@color/colorPrimaryDark"
+          app:met_primaryColor="@color/colorPrimaryDark"
+          app:met_textColorHint="@color/colorPrimaryLight"
+          android:hint="@string/team_example"/>
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/recyclerView"
+          android:layout_width="match_parent"
+          android:layout_marginLeft="@dimen/small_margin"
+          android:layout_marginRight="@dimen/small_margin"
+          android:layout_height="match_parent"
+          android:scrollbars="vertical"/>
+
+    </LinearLayout>
+  </RelativeLayout>
+</RelativeLayout>

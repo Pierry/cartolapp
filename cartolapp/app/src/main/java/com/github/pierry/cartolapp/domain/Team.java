@@ -11,6 +11,7 @@ import com.google.gson.annotations.SerializedName;
   @SerializedName(value = "nome") @Column(name = "Name") String name;
   @SerializedName(value = "nome_cartola") @Column(name = "Owner") String owner;
   @SerializedName(value = "url_escudo_png") @Column(name = "Image") String image;
+  @Column(name = "Points") transient double points;
 
   public Team() {
     super();
@@ -46,5 +47,13 @@ import com.google.gson.annotations.SerializedName;
 
   public void setImage(String image) {
     this.image = image;
+  }
+
+  public double getPoints() {
+    return points;
+  }
+
+  public void setPoints(double points) {
+    this.points = points;
   }
 }
