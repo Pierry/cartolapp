@@ -53,14 +53,18 @@ import org.androidannotations.annotations.ViewById;
   @Background void loadItems() {
     try {
       List<Player> players = playerRepository.get();
-      if (players == null || players.size() == 0) {
-        empty.setVisibility(View.VISIBLE);
-      } else {
-        empty.setVisibility(View.INVISIBLE);
-      }
+      visibleOrNot(players);
       loadAdapter(players);
     } catch (Exception e) {
       e.printStackTrace();
+    }
+  }
+
+  @UiThread void visibleOrNot(List<Player> players) {
+    if (players == null || players.size() == 0) {
+      empty.setVisibility(View.VISIBLE);
+    } else {
+      empty.setVisibility(View.INVISIBLE);
     }
   }
 

@@ -3,6 +3,7 @@ package com.github.pierry.cartolapp.api;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import com.github.pierry.cartolapp.api.contracts.IApi;
+import com.github.pierry.cartolapp.api.contracts.IPlayerApi;
 import com.github.pierry.cartolapp.api.contracts.ITeamApi;
 import com.github.pierry.cartolapp.domain.Team;
 import com.github.pierry.cartolapp.domain.contracts.ITeamRepository;
@@ -23,6 +24,7 @@ import org.androidannotations.annotations.EBean;
 @EBean public class TeamApi implements ITeamApi {
 
   @Bean(Api.class) IApi api;
+  @Bean(PlayerApi.class) IPlayerApi playerApi;
   @Bean(TeamRepository.class) ITeamRepository teamRepository;
 
   @Override public void get(final Context context, String team, final RecyclerView recyclerView) {

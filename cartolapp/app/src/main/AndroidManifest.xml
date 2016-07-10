@@ -15,7 +15,7 @@
 
     <meta-data
         android:name="AA_DB_NAME"
-        android:value="cartolapp1.db"
+        android:value="cartolapp2.db"
     />
     <meta-data
         android:name="AA_DB_VERSION"

@@ -55,13 +55,9 @@ import org.androidannotations.annotations.EBean;
         switch (code) {
           case 200:
             Gson gson = new GsonBuilder().excludeFieldsWithModifiers(Modifier.TRANSIENT).create();
-            TypeToken listType = new TypeToken<List<PlayerPoint>>() {
+            TypeToken listType = new TypeToken<PlayerPoint>() {
             };
             JsonObject json = result.getResult().get("atletas").getAsJsonObject();
-            List<PlayerPoint> players = (List<PlayerPoint>) gson.fromJson(json, listType.getType());
-            for (PlayerPoint p : players){
-
-            }
             break;
           case 404:
             break;

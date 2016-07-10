@@ -7,8 +7,8 @@ import com.github.pierry.cartolapp.ui.fragments.PlayerFragment_;
 import com.github.pierry.cartolapp.ui.fragments.TeamFragment_;
 
 public class HomeAdapter extends FragmentPagerAdapter {
-  final int PAGE_COUNT = 2;
-  private String tabTitles[] = new String[] { "Equipes", "Jogadores" };
+  final int PAGE_COUNT = 3;
+  private String tabTitles[] = new String[] { "Equipes", "Jogadores", "Perfil" };
 
   public HomeAdapter(FragmentManager fm) {
     super(fm);
@@ -23,6 +23,8 @@ public class HomeAdapter extends FragmentPagerAdapter {
       case 0:
         return new TeamFragment_();
       case 1:
+        return new PlayerFragment_();
+      case 2:
         return new PlayerFragment_();
     }
     return new TeamFragment_();

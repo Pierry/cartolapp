@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:id="@+id/layoutMain"
-    android:background="@color/icons"
+    android:background="@color/silver"
     android:layout_width="match_parent" android:layout_height="match_parent">
   <com.github.pierry.fitloader.RotateLoading
       android:id="@+id/rotateLoading"
@@ -31,8 +31,6 @@
       <android.support.v7.widget.RecyclerView
           android:id="@+id/recyclerView"
           android:layout_width="match_parent"
-          android:layout_marginLeft="@dimen/small_margin"
-          android:layout_marginRight="@dimen/small_margin"
           android:layout_height="match_parent"
           android:scrollbars="vertical"/>
 

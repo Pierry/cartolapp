@@ -2,8 +2,7 @@
   <string name="app_name">Cartolapp</string>
   <string name="home">Home</string>
   <string name="refresh">Atualizar</string>
-  <string name="title_example">LambisqueirosFC</string>
-  <string name="owner_example">Pierry Borges</string>
+  <string name="owner_example">John Doe</string>
   <string name="points_example">120.2</string>
   <string name="team_example">Equipe</string>
   <string name="add">Adicionar</string>
@@ -16,4 +15,5 @@
   <string name="empty_list">Nenhum item existente</string>
   <string name="add_title">Add</string>
   <string name="saved">Time salvo com sucesso</string>
+  <string name="name_example">Dream Team FC</string>
 </resources>

@@ -1,23 +1,14 @@
 package com.github.pierry.cartolapp.ui.fragments;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.RelativeLayout;
 import at.markushi.ui.CircleButton;
-import com.afollestad.materialdialogs.DialogAction;
-import com.afollestad.materialdialogs.MaterialDialog;
-import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
-import com.github.javiersantos.materialstyleddialogs.enums.Style;
 import com.github.pierry.cartolapp.R;
-import com.github.pierry.cartolapp.api.PlayerApi;
 import com.github.pierry.cartolapp.api.TeamApi;
-import com.github.pierry.cartolapp.api.contracts.IPlayerApi;
 import com.github.pierry.cartolapp.api.contracts.ITeamApi;
 import com.github.pierry.cartolapp.domain.Team;
 import com.github.pierry.cartolapp.domain.contracts.ITeamRepository;
@@ -25,8 +16,6 @@ import com.github.pierry.cartolapp.repositories.TeamRepository;
 import com.github.pierry.cartolapp.ui.SearchTeamActivity_;
 import com.github.pierry.cartolapp.ui.adapters.TeamAdapter;
 import com.github.pierry.fitloader.RotateLoading;
-import com.github.pierry.simpletoast.SimpleToast;
-import com.rengwuxian.materialedittext.MaterialEditText;
 import java.util.List;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Background;
@@ -48,11 +37,9 @@ import org.androidannotations.annotations.ViewById;
 
   @Bean(TeamApi.class) ITeamApi teamApi;
   @Bean(TeamRepository.class) ITeamRepository teamRepository;
-  @Bean(PlayerApi.class) IPlayerApi playerApi;
 
   @AfterViews void init() {
     loadRecyclerViewConfig();
-    playerApi.get();
   }
 
   @Click void action() {
