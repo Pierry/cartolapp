@@ -1,21 +1,14 @@
 Cartolapp
 ===========
 
-### Módulos 
+### Funcionalidades
 
-- Arquitetura básica
-- Heroscreen 
-- Add equipe
-- Equipes adicionadas
-- Correções e testes
-
-### Padrões
-
-- Repository Pattern
-
-### Libs
-
-- Android Annotations
+- Pesquisar por equipe
+- Equipes favoritas
+- Visualizar pontuação em tempo real
+- Classificar equipes favoritas por pontuação atual, total e patrimônio
+- Visualizar pontuação dos atletas a partir de uma equipe favorita
+- 30 min antes do fechamento do mercado, um alerta é enviado para o usuário em casa de algum jogador alterar o status de provável
 
 ### API
 - [Status do mercado](https://api.cartolafc.globo.com/mercado/status)
