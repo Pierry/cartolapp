@@ -1,7 +1,7 @@
 Cartolapp
 ===========
 
-### Funcionalidades
+### Backlog
 
 - Pesquisar por equipe
 - Equipes favoritas
